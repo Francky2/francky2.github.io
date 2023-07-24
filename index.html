@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="Resource/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
+    <style>
+        #contenu-supplementaire {
+            display: none; /* Masquer le contenu supplémentaire par défaut */
+        }
+
+    </style>
+    <script>
+
+        function afficherContenuSupplementaire() {
+            var contenuSupplementaire = document.getElementById("contenu-supplementaire");
+            var boutonVoirPlus = document.getElementById("bouton-voir-plus");
+
+            contenuSupplementaire.style.display = "block"; // Afficher le contenu supplémentaire
+            boutonVoirPlus.style.display = "none"; // Masquer le bouton "Voir plus"
+        }
+    </script>
+</head>
+<body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    
+    <nav class="navbar" style="background-color: rgb(37, 88, 230);">
+        <div class="max-width">
+            <div class="logo"><a href="#">Portfo<span style="color: white;">lio.</span></a></div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn">Accueil</a></li>
+                <li><a href="#about" class="menu-btn">A propos</a></li>
+                <li><a href="#services" class="menu-btn">Service</a></li>
+                <li><a href="#skills" class="menu-btn">Compétence</a></li>
+                <li><a href="#teams" class="menu-btn">Mes réalisations</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- home section start -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, je m'appelle</div>
+                <div class="text-2">AVOUGNANSOU Franck</div>
+                <div class="text-3">Et je suis <span class="typing"></span></div>
+                <a href="#contact">Engagez moi</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section start -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">À propos de moi</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="images/profile-1.jpeg" alt="">
+                </div>
+                <div class="column right">
+                    <div class="text"> Je suis un developpeur web Fullstack. De même, un <span class="typing-2"></span></div>
+                    <p> Je suis un professionnel issu de l'école d'ingénieur en informatique LCS. Ma spécialisation se trouve dans 
+                        le développement d'applications Web, un domaine
+                         qui a su éveiller ma passion pour l'informatique. Tout au long de mon parcours, j'ai acquis une solide
+                         expérience en PHP, MySQL ainsi qu'en marketing digital. <br><br>
+
+                       <p> Mon expertise ne se limite pas uniquement à la programmation.
+                        En effet, je possède une maîtrise approfondie du référencement SEO, 
+
+                        ce qui me permet d'optimiser la visibilité et la performance des sites Web que je développe. </p> <br>
+                       <p> De plus, je matrîse plusieurs  autres langages de programmation, ce qui
+                      me confère une polyvalence et une adaptabilité remarquables.</p>
+                    <a href="Resource/ANF_CV_C.pdf" download >Télécharger CV</a>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- services section start -->
+    <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">Mes Services</h2>
+            <div class="serv-content">
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <div class="text">Conception de site </div>
+                        <p>Nous pouvons vous créer vos sites statiques et dynamique.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="text">référencement SEO</div>
+
+                        <p>Nous optimisons vos textes et vos pages web afin de booster votre visibilité sur le net.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    
+                    <div class="box">
+                        <i class="fas fa-paint-brush"></i>
+                        <div class="text">Redaction web</div>
+                        <p>Que ce soit, un blog ou un site e-commerce, nous pouvons vous produire des textes de qualité.</p>
+                    </div>
+                </div>
+               </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills section start -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">My skills</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text">Mes compétences créatives et mes expériences</div>
+                    <p>
+                       
+                        <p> Pendant mes études, j'ai réalisé un stage de 6 mois à la Direction des Bourses et Aides Universitaires du Bénin (DBAU).
+                         Ce fut une occasion unique d'appliquer mes compétences en programmation, en utilisant principalement le langage PHP et le framework Laravel. <br> <br> </p>
+                         <p>Cette expérience m'a permis de développer une expertise solide dans la création d'applications web robustes et efficaces,
+                        ainsi que dans la gestion des bases de données. <button  id="bouton-voir-plus" onclick="afficherContenuSupplementaire()">Voir plus</button>
+                
+                        <div id="contenu-supplementaire"> 
+                            <br>                    
+                            <p> J'ai également effectué un second stage de 6 mois chez Tiafrik, où j'ai approfondi mes connaissances en référencement SEO. Cette expérience m'a fait prendre conscience de l'importance d'optimiser les sites web pour les moteurs de recherche afin d'améliorer leur visibilité et d'attirer un trafic ciblé.  </p> <br></p>
+                            <p> Grâce à ces stages, j'ai acquis une expérience pratique et concrète dans le développement web, en utilisant des langages tels que le PHP et en maîtrisant le framework Laravel.
+                            Je suis également compétent dans la gestion des bases de données et conscient des bonnes pratiques de développement. </p> <br>
+
+                        
+                        </div>
+                                       
+                     
+                    
+                </div>
+                <div class="column right">
+                    <div class="bars">
+                        <div class="info">
+                            <span>HTML</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="line html"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>CSS</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="line css"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>JavaScript</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="line js"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>PHP</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="line php"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>MySQL</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="line mysql"></div>
+                    </div>
+
+                    <div class="bars">
+                        <div class="info">
+                            <span>Laravel</span>
+                            <span>69%</span>
+                        </div>
+                        <div class="line mysql"></div>
+                    </div>
+
+                    <div class="bars">
+                        <div class="info">
+                            <span>VueJS</span>
+                            <span>55%</span>
+                        </div>
+                        <div class="line mysql"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>WordPress</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="line mysql"></div>
+                    </div>
+
+                    <div class="bars">
+                        <div class="info">
+                            <span>Referencement SEO</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="line mysql"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- teams section start -->
+    <section class="teams" id="teams">
+        <div class="max-width">
+            <h2 class="title">Mes réalisations</h2>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <a href=""><img src="images/ANF.png" alt=""></a>
+                        <div class="text"> ANF SanteAnimation</div>
+                        <p>  Il s'agit d'un site web qui présente des conseilles sur les règles d'hygienne.
+                             </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                       <a href=""> <img src="images/Blender.png" alt="Blen3D Realisation"></a>
+                        <div class="text">Blen3D Realisation</div>
+                        <p>Il s'agit  de mes   réalisations sur le logiciel d'animation 3D <strong>Blender</strong></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                       <a href=""> <img src="images/AnimalFruit.png" alt=""></a>
+                        <div class="text">AnimalFruit</div>
+                        <p>Une application Desktop pour apprendre au enfant les noms des animals et des fruits populaires</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/Formation-Redaction web.png" alt="Formation en rédaction web">
+                        <div class="text">Writter Formation</div>
+                        <p>Une application Laravel qui donne la posibilité aux internautes de se faire former en rédaction web </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <a href="https://www.youtube.com/watch?v=-gWN95NKL2A&t=1s"><img src="images/Montage-video.png" alt="Montage Video"></a>
+                        <div class="text">Montage Video</div>
+                        <p>Une video conçue  pour mettre en avance les dessins animés populaire et tendance </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section start -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contactez moi</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Entrer en contact</div>
+                    <p>Cher internaute merci pour votre aimable attention.
+                        Si vous avez besoin de l'un de mes compétence n'hésitez pas me contacter. 
+                        <br><br> maintenant !
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">AVOUGNANSOU Franck</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Bénin, Cotonou</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">avougnansouf@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Envoir de message</div>
+                    <!DOCTYPE html>
+                    <html>
+                    <head>
+                        <title>Formulaire</title>
+                    </head>
+                    <body>
+                        
+                    
+                        <form action="Resource/enregistrement.php" method="POST" >
+                            <div class="fields">
+                                <div class="field">
+                                    <input type="text" placeholder="Entrez votre nom" required name="nom" id="nom">
+                                </div>
+                                <div class="field">
+                                    <input type="text" placeholder="Entrez votre mail" required name="email" id="email">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <input type="text" placeholder="Objet" required name="objet" id="objet">
+                            </div>
+                            <div class="field">
+                                <input type="text" placeholder="Message" required name="messag" id="messag">
+                            </div>
+                            <div class="button-area">
+                                <button type="submit">Envoyer</button>
+                            </div>
+                     
+                        </form>
+                    </body>
+                    </html>
+                    
+                      
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section start -->
+    <footer>
+        <span>Créer par <a href="https://www.youtube.com/watch?v=-gWN95NKL2A&t=1s">ANF</a> <span class="far fa-copyright"></span> 2023 Tout droit réservé.</span>
+    </footer>
+
+    <script src="Resource/script.js"></script>
+</body>
+</html>
