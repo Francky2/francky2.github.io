@@ -42,7 +42,7 @@ $(document).ready(function(){
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Concepteur de site web", "Concepteur d'application mobile"],
+        strings: ["Reacteur web", "Référencement SEO"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
