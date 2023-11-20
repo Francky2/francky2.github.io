@@ -42,7 +42,7 @@ $(document).ready(function(){
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Reacteur web", "Reférenceur SEO"],
+        strings: ["Redacteur web", "Reférenceur SEO"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
